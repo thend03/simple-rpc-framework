@@ -19,7 +19,7 @@ public class RequestHandlerRegistry {
     private Map<Integer, RequestHandler> handlerMap = new HashMap<>();
     private static RequestHandlerRegistry instance = null;
 
-    private static RequestHandlerRegistry getInstance() {
+    public static RequestHandlerRegistry getInstance() {
         if (instance == null) {
             instance = new RequestHandlerRegistry();
         }
